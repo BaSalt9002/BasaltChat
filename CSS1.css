@@ -178,4 +178,5 @@ textarea {
     padding: 1em 1.5em;
     word-wrap: break-word;
     float: center;
+    text-align: left;
 }
