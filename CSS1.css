@@ -177,5 +177,5 @@ textarea {
     overflow: auto;
     padding: 1em 1.5em;
     word-wrap: break-word;
-    text-align: center;
+    float: center;
 }
