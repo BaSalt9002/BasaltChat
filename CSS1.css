@@ -166,6 +166,7 @@ div {
 textarea {
     background: #0f0f0f;
     border: 1px solid #ddd;
+    border-radius: 5px;
     border-left: 3px solid #f36d33;
     color: #666;
     page-break-inside: avoid;
