@@ -1,1 +1,0 @@
-messages = '[{"name" : "SERVER", "message" : "THIS IS THE SERVER. STARTING THE CHAT.."}]';
