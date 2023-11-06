@@ -11,6 +11,7 @@
   gtag('config', 'G-S0Z4FYXZ51');
 </script>
 <script type="text/javascript">
+  document.getElementByTagName('textarea').innerHTML = "Hello, there!";
   function sendMsg() {
     var message = document.getElementById('msgIn');
     fetch("./messages.json") 
