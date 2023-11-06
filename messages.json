@@ -1,8 +1,0 @@
-{
-  "users" : [
-    {"name" : "Server"}
-  ],
-  "messages" : [
-    {"user" : "Server", "message" : "This is the server. Starting the chat..."}
-  ]
-}
