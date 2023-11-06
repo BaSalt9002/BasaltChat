@@ -13,11 +13,11 @@
 <script type="text/javascript">
   function sendMsg() {
     var message = document.getElementById('msgIn');
-    fetch("./sample.json") 
+    fetch("./messages.json") 
         .then((res) => { 
         return res.json(); 
     }) 
-    .then((data) => document.getElementByTagName('textarea').innerHTML = data; 
+    .then((data) => document.getElementByTagName('textarea').innerHTML = data);
   }
 </script>
 <title>BasaltChat</title>
@@ -28,6 +28,6 @@
 <h1>Welcome <stan id="titleUsr"></stan></h1>
 <textarea rows="10" cols="50"></textarea>
 <input type="text" placeholder="Message" id="msgIn">
-<input type="submit" id="button" value="Enter" onclick="sendMsg()">
+<input type="submit" id="button" value="Enter" onclick='sendMsg()'>
 </body>
 </html>
