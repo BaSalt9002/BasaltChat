@@ -19,18 +19,6 @@
 <textarea rows="10" cols="50" id="msgBox">Hi!</textarea>
 <input type="text" placeholder="Message" id="msgIn">
 <input type="submit" id="button" value="Enter" onclick="sendMsg()">
-<script>
-  document.getElementById("msgBox").innerHTML = "Hello, there!";
-  const fs = require('fs');
-  function sendMsg() {
-    alert("button was clicked!");
-    fs.readFile('messages.txt', (err, data) => {
-    if (err) throw err;
- 
-    console.log(data.toString());
-    document.getElementById("msgBox").innerHTML = data.toString();
-})
-  }
-</script>
+<script type="text/javascript" src="script.js"></script>
 </body>
 </html>
