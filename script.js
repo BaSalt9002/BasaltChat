@@ -1,5 +1,5 @@
 document.getElementById("msgBox").innerHTML = "Hello, there!";
-  const fs = require('fs');
+  const fs = require('fs')
   function sendMsg() {
     alert("button was clicked!");
     fs.readFile('messages.txt', (err, data) => {
