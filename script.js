@@ -1,11 +1,10 @@
-document.getElementById("msgBox").innerHTML = "Hello, there!";
-  const fs = require('fs')
-  function sendMsg() {
+function sendMsg() {
     alert("button was clicked!");
-    fs.readFile('messages.txt', (err, data) => {
-    if (err) throw err;
- 
-    console.log(data.toString());
-    document.getElementById("msgBox").innerHTML = data.toString();
-    })
+    const xmlhttp = new XMLHttpRequest();
+    xmlhttp.onload = function() {
+        const myObj = JSON.parse(this.responseText);
+        document.getElementById("msgBox").innerHTML = myObj.name;
+    };
+    xmlhttp.open("GET", "messages.txt");
+    xmlhttp.send();
 }
