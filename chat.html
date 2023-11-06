@@ -22,8 +22,8 @@
 <script type="text/javascript" src="messages.js"></script>
 <script>
   document.getElementById("msgBox").innerHTML = "Hello, there!";
-  alert("hi!");
   function sendMsg() {
+    alert("button was clicked!");
     var myData = JSON.parse(messages);
     alert(myData.messages[0]);
   }
